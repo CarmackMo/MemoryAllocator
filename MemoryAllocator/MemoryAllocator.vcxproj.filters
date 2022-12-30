@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\DynamicAllocator">
+      <UniqueIdentifier>{2c1a3bee-25fe-4540-8487-f4e211727cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FixSizeAllocator">
+      <UniqueIdentifier>{1810c9ea-c9e0-4739-8f57-f3db9e14aa03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{68af16d4-dd74-4368-b85e-20e1f041c5ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DynamicAllocator\DynamicAllocator.cpp">
+      <Filter>Source Files\DynamicAllocator</Filter>
+    </ClCompile>
+    <ClCompile Include="FixSizeAllocator\BitArray.cpp">
+      <Filter>Source Files\FixSizeAllocator</Filter>
+    </ClCompile>
+    <ClCompile Include="FixSizeAllocator\FixSizeAllocator.cpp">
+      <Filter>Source Files\FixSizeAllocator</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryAllocator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DynamicAllocator\DynamicAllocator.h">
+      <Filter>Source Files\DynamicAllocator</Filter>
+    </ClInclude>
+    <ClInclude Include="FixSizeAllocator\BirArray.h">
+      <Filter>Source Files\FixSizeAllocator</Filter>
+    </ClInclude>
+    <ClInclude Include="FixSizeAllocator\FixSizeAllocator.h">
+      <Filter>Source Files\FixSizeAllocator</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Utility.h">
+      <Filter>Source Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryAllocator.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DynamicAllocator\DynamicAllocator.inl">
+      <Filter>Source Files\DynamicAllocator</Filter>
+    </None>
+    <None Include="FixSizeAllocator\BitArray.inl">
+      <Filter>Source Files\FixSizeAllocator</Filter>
+    </None>
+    <None Include="FixSizeAllocator\FixSizeAllocator.inl">
+      <Filter>Source Files\FixSizeAllocator</Filter>
+    </None>
+  </ItemGroup>
+</Project>
