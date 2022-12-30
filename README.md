@@ -7,23 +7,23 @@ A universal memory allocator that re-implement the "malloc()" and "free()" alloc
 ## APIs
 The APIs of memory allocator includes:
   ```cpp
-    bool InitializeMemoryAllocator(void * i_pHeapMemory, size_t i_sizeHeapMemory)
+    bool InitializeMemoryAllocator(void * i_pHeapMemory, size_t i_sizeHeapMemory);
 
-    void DestroyMemoryAllocator()
+    void DestroyMemoryAllocator();
 
-    void* Alloc(size_t size)
+    void* Alloc(size_t size);
 
-    void Free(void* ptr)
+    void Free(void* ptr);
 
-    void Collect()
+    void Collect();
 
-    void* operator new(size_t size)
+    void* operator new(size_t size);
 
-    void* operator new[](size_t size)
+    void* operator new[](size_t size);
 
-    void operator delete(void* ptr)
+    void operator delete(void* ptr);
 
-    void operator delete[](void* ptr)
+    void operator delete[](void* ptr);
   ```
 
 
@@ -40,19 +40,19 @@ The APIs of memory allocator includes:
 + ### APIs
     The APIs of dynamic allocator includes:
   ```cpp
-    void* Alloc(size_t size)
+    void* Alloc(size_t size);
 
-    void* Alloc(size_t size, unsigned int alignment)
+    void* Alloc(size_t size, unsigned int alignment);
 
-    bool Free(void* ptr)
+    bool Free(void* ptr);
 
-    bool Contains(void* ptr)
+    bool Contains(void* ptr);
 
-	bool IsAllocated(void* ptr)
+	bool IsAllocated(void* ptr);
 
-    void Collect()
+    void Collect();
 
-    void Destroy()
+    void Destroy();
 
     DynamicAllocator* CreateDynamicAllocator(void* baseAddr, size_t size);
   ```
@@ -67,15 +67,15 @@ The APIs of memory allocator includes:
 + ### APIs
     The APIs of fix allocator includes:
   ```cpp
-    void* Alloc()
+    void* Alloc();
 
-    bool Free(void* ptr)
+    bool Free(void* ptr);
 
-    bool Contains(void* ptr)
+    bool Contains(void* ptr);
 
-    bool IsAllocated(void* ptr)
+    bool IsAllocated(void* ptr);
 
-    void Destroy()
+    void Destroy();
 
     FixSizeAllocator* CreateFixSizeAllocator(void* baseAddr, size_t blockNum, size_t blockSize, size_t heapSize);
   ```
