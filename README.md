@@ -79,7 +79,7 @@ The APIs of MemoryAllocator includes:
     The structure of FixSizeAllocator is like: ![FixSizeAllocator Structure](Images/FixSizeAllocator.png)
 
 + ### APIs
-    The APIs of fix allocator includes:
+    The APIs of FixSizeAllocator includes:
   ```cpp
     void* Alloc();
 
