@@ -9,7 +9,7 @@ MemoryAllocator is a hardware-oriented memory allocator. That is, given the star
 + MemoryAllocator is compatible with both 32-bit system and 64-bit system. It is also compatible with most operating systems. MemoryAllocator can be easily deployed on different systems like Windows, Linux, macOS, etc.
 + MemoryAllocator is made up of several independent sub-systems: one dynamic allocator and several fix size allocators (See below for more detail of dynamic allocator and fix size allocator). By doing so, the coupling of each sub-system is highly reduced, which also reduces the risk of overall crashes caused by errors from one of the sub-systems. In this project, MemoryAllocator has one dynamic allocator, one 16-bit fix size allocator, one 32-bit fix size allocator and one 96-bit fix size allocator.
 + The structure of MemoryAllocator is like: ![MemoryAllocator Structure](Images/MemoryAllocator.png)
-  
+
 
 ## APIs
 The APIs of MemoryAllocator includes:
